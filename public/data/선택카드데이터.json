@@ -1,0 +1,74 @@
+[
+  {
+    "title": "앤틱",
+    "stage": 0,
+    "id": 0,
+    "display": true,
+    "qa": "Q1",
+    "img": "앤틱.gif",
+    "text": "낯선 분위기로 \n신선함을 줄 수 있는"
+  },
+  {
+    "title": "현대",
+    "stage": 0,
+    "id": 1,
+    "display": true,
+    "qa": "Q1",
+    "img": "현대.gif",
+    "text": "일상적 배경에서 \n진행되어 몰입감을 \n줄 수 있는"
+  },
+  {
+    "title": "밝은",
+    "stage": 1,
+    "id": 2,
+    "display": false,
+    "qa": "Q2",
+    "img": "밝은.gif",
+    "text": "이상적 전개로 \n기분을 밝힐 수 있는"
+  },
+  {
+    "title": "어둡",
+    "stage": 1,
+    "id": 3,
+    "display": false,
+    "qa": "Q2",
+    "img": "어둡.gif",
+    "text": "어둠 속에서 \n현실적 문제를 짚는"
+  },
+  {
+    "title": "개인",
+    "stage": 2,
+    "id": 4,
+    "display": false,
+    "qa": "Q3",
+    "img": "개인.gif",
+    "text": "주인공 시점으로 \n몰입할 수 있는"
+  },
+  {
+    "title": "집단",
+    "stage": 2,
+    "id": 5,
+    "display": false,
+    "qa": "Q3",
+    "img": "집단.gif",
+    "text": "여러 인물의 시점을 \n볼 수 있는"
+  },
+  {
+    "title": "잔잔",
+    "stage": 3,
+    "id": 6,
+    "display": false,
+    "qa": "Q4",
+    "img": "잔잔.gif",
+    "text": "섬세한 전개로 \n해석을 유도하는"
+  },
+  {
+    "title": "빠른",
+    "stage": 3,
+    "id": 7,
+    "display": false,
+    "qa": "Q4",
+    "img": "빠른.gif",
+    "text": "사건 변화를 거듭하는"
+  }
+]
