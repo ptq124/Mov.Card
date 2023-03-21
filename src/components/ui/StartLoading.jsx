@@ -25,9 +25,8 @@ const Ring = styled.div`
   border-radius: 50%;
   text-align: center;
   line-height: 36px;
-  font-family: 'Poppins';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 24px;
   color: #ffffff;
   display: flex;

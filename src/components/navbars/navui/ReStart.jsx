@@ -21,6 +21,11 @@ const Btn = styled.button`
   font-weight: 500;
   font-size: 27px;
   line-height: 40px;
+
+  :hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+
   @media screen and (max-width: 799px) {
     display: none;
   }

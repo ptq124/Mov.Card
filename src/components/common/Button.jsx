@@ -6,7 +6,7 @@ const Btn = styled.button`
 
   font-family: 'Poppins';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 30px;
   line-height: 45px;
 

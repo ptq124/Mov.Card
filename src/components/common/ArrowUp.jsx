@@ -14,6 +14,10 @@ const Btn = styled.button`
   border-radius: 64px;
   border: 1px solid white;
 
+  :hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+
   @media screen and (max-width: 768px) {
     width: 40px;
     height: 40px;
