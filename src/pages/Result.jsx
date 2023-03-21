@@ -64,6 +64,7 @@ export default function Result() {
         opacity: 1,
         duration: 0.1,
         ease: 'power1.out',
+        backgroundSize: 'cover',
         background: `url(/imgs/background/${background[0]}) #111220`,
       }
     )
