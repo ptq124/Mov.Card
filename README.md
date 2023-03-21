@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# Mov. Card
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[링크](https://movcard.swygbro.com//)
 
-## Available Scripts
+## 프로젝트 소개
 
-In the project directory, you can run:
+서치 없이, 오늘의 인디영화 큐레이팅 서비스 Mov(ie). card
 
-### `npm start`
+- 남들 다 보는 흔한 영화 말고, 오늘은 조금 독특한 영화를 보고 싶을 때.
+- 수많은 스트리밍 콘텐츠의 홍수에서 원하는 콘텐츠를 찾기 어려울 때.
+- 고심 끝에 영화를 골랐으나 예상과 달라 당황했을 때
+- 스트리밍 서비스 검색 결과가 불만족 스러울 때
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 기술스택
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+`React` `Styled-Components`
 
-### `npm test`
+## Screen Shot
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![스크린샷 2023-03-13 오후 2 22 49](https://user-images.githubusercontent.com/64758823/224615674-78b98406-523f-457c-93bb-bd2bdfec35fe.png)
+![스크린샷 2023-03-13 오후 2 23 01](https://user-images.githubusercontent.com/64758823/224615724-7ba2921f-3889-4090-94de-2e8449b8e586.png)
+![스크린샷 2023-03-13 오후 2 23 11](https://user-images.githubusercontent.com/64758823/224615754-226aed00-d951-4eba-9348-92b2e82033cd.png)
+![스크린샷 2023-03-13 오후 2 23 20](https://user-images.githubusercontent.com/64758823/224615763-6e747402-8186-49ad-9826-37f00f477306.png)
+![스크린샷 2023-03-13 오후 2 23 27](https://user-images.githubusercontent.com/64758823/224615767-19e3bac0-4efc-4862-b5d3-8c4d6a762705.png)
+![스크린샷 2023-03-13 오후 2 23 40](https://user-images.githubusercontent.com/64758823/224615769-5df39685-4a4c-418f-a8e5-ea8c4f80a5eb.png)
