@@ -15,6 +15,14 @@
 
 `React` `Styled-Components`
 
+## 후기
+
+- 50MB에 해당하는 Gif와 Img파을을 다뤘는데 로딩시간이 있어 사용자 경험 측면에서 안좋았다. Img파일은 webp파일로바꾸고 Gif용량을 줄이는 방법을 썼는데 웹은 그럭저럭 잘 나왔지만 모바일 웹 환경에선 아직 사용자 경험이 많이 안좋았다. 추후 모바일 환경 최적화 공부가 필요할거 같다.
+- tailwind css를 써오다가 styled-components로 바꿨다. 바꾼 이유는 tailwind 환경에선 tailwind config파일에서 따로 설정 해주는게 불편했고 가장 큰건 props를 활용한 css 조작이 까다로웠다. Css 조작이 빈번히 일어나는 곳에선 styled-components가 적절해 보인다. 다만 아직 빠르게 개발을 하기위해선 tailwind가 좋은것 같다. (styled-components는 따로 태그 만드는게 불편하고 파일이 길어져서 네이밍을 잘못하면 가독성이 어려운 코드가 되는거 같다)
+- 비즈니스 로직과 UI 로직을 context로 분리 해봤는데 뭔가 Redux와 같은 상태관리를 이용하는것이 어땠을까 하는 생각이든다. (직관적으로 사용할수 있을듯)  
+- 처음으로 모바일 환경이 되는 웹을 만들어봤다. media query신기하다... (과연 이 방법이 최선일까?) 
+
+
 ## Screen Shot
 
 <img alt="스크린샷 2023-03-22 오후 1 12 44" src="https://user-images.githubusercontent.com/64758823/226800621-489ca4f2-4f6b-439b-b606-29a777850762.png" width="60%" height="60%" align="left">
