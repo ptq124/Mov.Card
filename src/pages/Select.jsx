@@ -2,8 +2,11 @@ import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import SelectCard from '../components/ui/SelectCard'
 import { OpacityEffect } from '../util/OpacityEffect'
+import 선택배경 from '../assets/bg/선택배경화면.jpg'
+import Nav from '../components/navbars/Nav'
+
 const SelectPage = styled.section`
-  height: 75%;
+  height: 100%;
   width: 100%;
 
   display: flex;
@@ -11,8 +14,11 @@ const SelectPage = styled.section`
   align-items: center;
   justify-content: space-evenly;
 
+  background-image: url(${선택배경});
+  background-size: cover;
+  background-position: center;
+
   @media screen and (max-width: 799px) {
-    height: 75%;
     justify-content: space-evenly;
   }
 `
@@ -34,6 +40,7 @@ export default function Select() {
 
   return (
     <SelectPage>
+      <Nav />
       <Text> 둘중 더 원하는 카드를 클릭 하세요.</Text>
       <SelectCard />
     </SelectPage>

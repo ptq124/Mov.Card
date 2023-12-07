@@ -7,6 +7,7 @@ import Poster from '../components/ui/Poster'
 import ResultInfo from '../components/ui/ResultInfo'
 import MovieChange from '../components/ui/MovieChange'
 import NavArrow from '../components/ui/NavArrow'
+import Nav from '../components/navbars/Nav'
 
 const ResultPage = styled.section`
   height: 65%;
@@ -87,6 +88,7 @@ export default function Result() {
       <Arrow>
         <NavArrow 결과데이터조작={결과데이터조작} />
       </Arrow>
+      <Nav />
       <ResultPage>
         <Poster data={data} />
         {data.map((items, index) => (

@@ -8,6 +8,8 @@ const Nav = styled.div`
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
+
+  margin-top: 4%;
 `
 const Right = styled.div`
   display: flex;
