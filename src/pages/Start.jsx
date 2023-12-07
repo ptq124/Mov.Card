@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 import Button from '../components/common/Button'
 import MainLogo from '../components/common/MainLogo'
-import StartLoading from 'components/ui/StartLoading'
+import StartLoading from '../components/ui/StartLoading'
 import 시작배경 from '../assets/bg/시작배경화면.jpg'
 import 선택배경 from '../assets/bg/선택배경화면.jpg'
 
