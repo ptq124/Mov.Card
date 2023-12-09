@@ -5,7 +5,6 @@ import Button from '../components/common/Button'
 import MainLogo from '../components/common/MainLogo'
 import StartLoading from '../components/ui/StartLoading'
 import 시작배경 from '../assets/bg/시작배경화면.jpg'
-import 선택배경 from '../assets/bg/선택배경화면.jpg'
 
 export default function Start() {
   const navigate = useNavigate()
@@ -17,15 +16,13 @@ export default function Start() {
   const [imgUrl, setImgUrl] = useState('')
 
   const preLoadImage = useCallback(() => {
-    ;[시작배경, 선택배경].forEach((url) => {
-      const img = new Image()
-      img.src = url
-    })
+    const img = new Image()
+    img.src = 시작배경
+    setImgUrl(시작배경)
   }, [])
 
   useEffect(() => {
     preLoadImage()
-    setImgUrl(시작배경)
     setTimeout(() => {
       setImgLoading(false)
     }, 2000)
