@@ -3,6 +3,18 @@ import styled from 'styled-components'
 import { useSelectCardContext } from '../../context/SelectCardContext'
 import Card from '../common/Card'
 
+export default function SelectCard({ gif }) {
+  const { data } = useSelectCardContext()
+
+  return (
+    <CardBox>
+      {data.map((info, idx) => (
+        <Card key={info.id} info={info} gif={gif[idx]} />
+      ))}
+    </CardBox>
+  )
+}
+
 const CardBox = styled.div`
   display: flex;
   gap: 16%;
@@ -10,15 +22,3 @@ const CardBox = styled.div`
     gap: 10%;
   }
 `
-
-export default function SelectCard() {
-  const { data } = useSelectCardContext()
-
-  return (
-    <CardBox>
-      {data.map((info) => (
-        <Card key={info.id} info={info} />
-      ))}
-    </CardBox>
-  )
-}

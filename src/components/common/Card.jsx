@@ -3,6 +3,25 @@ import styled from 'styled-components'
 //import { gsap } from 'gsap'
 import { useSelectCardContext } from '../../context/SelectCardContext'
 
+export default function Card({ info, gif }) {
+  const { text, display, stage, id } = info
+
+  const { 다음카드로변경 } = useSelectCardContext()
+
+  return (
+    <CardStyled
+      className='card'
+      display={display.toString()}
+      onClick={() => {
+        다음카드로변경(stage, id)
+      }}
+    >
+      <CardImg src={gif} />
+      <CardText>{text}</CardText>
+    </CardStyled>
+  )
+}
+
 const CardStyled = styled.div`
   border-image-source: linear-gradient(
     155.93deg,
@@ -82,21 +101,3 @@ const CardImg = styled.img.attrs(({ src }) => ({
     height: 7rem;
   }
 `
-export default function Card({ info }) {
-  const { text, display, stage, id, img } = info
-
-  const { 다음카드로변경 } = useSelectCardContext()
-
-  return (
-    <CardStyled
-      className='card'
-      display={display.toString()}
-      onClick={() => {
-        다음카드로변경(stage, id)
-      }}
-    >
-      <CardImg src={`./imgs/gif/${img}`} />
-      <CardText>{text}</CardText>
-    </CardStyled>
-  )
-}
