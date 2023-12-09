@@ -52,7 +52,7 @@ export default function Select() {
 
     setTimeout(() => {
       setImgLoading(false)
-    }, 2000)
+    }, 2500)
   }, [preLoadImage, preLoadGif])
 
   return imgLoading ? (
