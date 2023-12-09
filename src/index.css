@@ -9,11 +9,4 @@ body {
   width: 100vw;
   overflow: hidden;
   color: white;
-  cursor: url('/public/cursor.svg') 16 0, default;
-}
-button {
-  cursor: url('/public/cursorp.svg') 16 0, pointer;
-}
-.card {
-  cursor: url('/public/cursorp.svg') 16 0, pointer;
 }
