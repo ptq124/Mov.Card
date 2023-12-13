@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Button from '../components/common/Button'
 import MainLogo from '../components/common/MainLogo'
 import StartLoading from '../components/ui/StartLoading'
-import 시작배경 from '../assets/bg/시작배경화면.jpg'
+import 시작배경 from '../assets/bg/시작배경화면.webp'
 
 export default function Start() {
   const navigate = useNavigate()
@@ -28,22 +28,26 @@ export default function Start() {
     }, 2000)
   }, [preLoadImage])
 
-  return imgLoading ? (
-    <StartLoading />
-  ) : (
+  return (
     <StartPage imgUrl={imgUrl}>
-      <MainLogo
-        value={{
-          width: 342,
-          height: 163,
-        }}
-      />
-      <TextMain>오늘 당신이 보아야 할 영화는?</TextMain>
-      <TextSub>
-        세 장의 카드를 골라,
-        <br /> 오늘 시청할 영화를 추천 받으세요.
-      </TextSub>
-      <Button text='Start' onClick={handleNextPage} />
+      {imgLoading ? (
+        <StartLoading />
+      ) : (
+        <>
+          <MainLogo
+            value={{
+              width: 342,
+              height: 163,
+            }}
+          />
+          <TextMain>오늘 당신이 보아야 할 영화는?</TextMain>
+          <TextSub>
+            세 장의 카드를 골라,
+            <br /> 오늘 시청할 영화를 추천 받으세요.
+          </TextSub>
+          <Button text='Start' onClick={handleNextPage} />
+        </>
+      )}
     </StartPage>
   )
 }
