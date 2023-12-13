@@ -43,8 +43,13 @@ export default function Result() {
   }, [key])
 
   useEffect(() => {
-    preLoadImgs()
-    preLoadPoster()
+    const loadData = async () => {
+      await preLoadImgs()
+      await preLoadPoster()
+    }
+
+    loadData()
+
     setTimeout(() => {
       setImgLoading(false)
     }, 2000)
