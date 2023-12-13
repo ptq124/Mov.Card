@@ -77,23 +77,27 @@ export default function Result() {
     setBg([...background])
   }
 
-  return imgLoading ? (
-    <StartLoading />
-  ) : (
+  return (
     <>
-      <Arrow>
-        <NavArrow 결과데이터조작={결과데이터조작} />
-      </Arrow>
-      <Nav />
-      <ResultPage>
-        <Poster data={data} />
-        {data.map((items, index) => (
-          <ResultInfo data={items} index={index} key={index} />
-        ))}
-        <ChangeBtn>
-          <MovieChange 결과데이터조작={결과데이터조작} />
-        </ChangeBtn>
-      </ResultPage>
+      {imgLoading ? (
+        <StartLoading />
+      ) : (
+        <>
+          <Arrow>
+            <NavArrow 결과데이터조작={결과데이터조작} />
+          </Arrow>
+          <Nav />
+          <ResultPage>
+            <Poster data={data} />
+            {data.map((items, index) => (
+              <ResultInfo data={items} index={index} key={index} />
+            ))}
+            <ChangeBtn>
+              <MovieChange 결과데이터조작={결과데이터조작} />
+            </ChangeBtn>
+          </ResultPage>
+        </>
+      )}
     </>
   )
 }
