@@ -1,9 +1,9 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom'
 import styled from 'styled-components'
-import ResultNav from './ResultNav'
-import SelectNav from './SelectNav'
-import StartNav from './StartNav'
+import ResultNav from './navui/ResultNav'
+import SelectNav from './navui/SelectNav'
+import StartNav from './navui/StartNav'
 const Header = styled.header`
   width: 80%;
   display: flex;

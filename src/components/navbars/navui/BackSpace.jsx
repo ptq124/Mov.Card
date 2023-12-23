@@ -1,5 +1,5 @@
 import React from 'react'
-import { ReactComponent as BackSpaceIcon } from './backspace.svg'
+import { ReactComponent as BackSpaceIcon } from '../../../assets/icons/backspace.svg'
 import styled from 'styled-components'
 
 const Btn = styled.button`

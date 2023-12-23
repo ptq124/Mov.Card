@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { ReactComponent as CheckIcon } from './check.svg'
+import { ReactComponent as CheckIcon } from '../../../assets/icons/check.svg'
 const CopyBtn = styled.button`
   width: 214px;
   height: 61px;

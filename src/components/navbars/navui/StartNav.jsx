@@ -1,5 +1,5 @@
 import React from 'react'
-import CopyLink from './navui/CopyLink'
+import CopyLink from './CopyLink'
 import styled from 'styled-components'
 
 const Nav = styled.div`

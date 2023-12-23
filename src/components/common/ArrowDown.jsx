@@ -1,5 +1,5 @@
 import React from 'react'
-import { ReactComponent as ArrowdownIcon } from '../common/arrow_down.svg'
+import { ReactComponent as ArrowdownIcon } from '../../assets/icons/arrow_down.svg'
 import styled from 'styled-components'
 
 const Btn = styled.button`

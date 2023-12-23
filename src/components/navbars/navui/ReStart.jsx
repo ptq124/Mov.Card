@@ -1,5 +1,5 @@
 import React from 'react'
-import { ReactComponent as ReStartIcon } from './restart.svg'
+import { ReactComponent as ReStartIcon } from '../../../assets/icons/restart.svg'
 import styled from 'styled-components'
 
 const Btn = styled.button`

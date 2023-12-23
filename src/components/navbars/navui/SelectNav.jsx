@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { useSelectCardContext } from '../../context/SelectCardContext'
-import MainLogo from '../common/MainLogo'
-import BackSpace from './navui/BackSpace'
-import { ReactComponent as BackSpaceIcon } from './navui/backspace.svg'
+import { useSelectCardContext } from '../../../context/SelectCardContext'
+import MainLogo from '../../common/MainLogo'
+import BackSpace from './BackSpace'
+import { ReactComponent as BackSpaceIcon } from '../../../assets/icons/backspace.svg'
 const Nav = styled.div`
   display: flex;
   justify-content: center;
