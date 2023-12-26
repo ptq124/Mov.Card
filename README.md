@@ -16,7 +16,9 @@
 기존 UX의 아쉬음을 느껴 리팩토링하면서 UX개선을 시도하였음(링크 클릭하면 자세히 보기 가능)
 - [시작 페이지 이슈](https://github.com/ptq124/MovCard/issues/2)
 - [선택, 결과 페이지 이슈](https://github.com/ptq124/MovCard/issues/5)
-  
+
+추후 코드의 안정성과 신뢰성을 높이기 위해 자바스크립트에서 타입스크립트로 마이그레이션을 진행
+- [타입스크립트 전환 이슈](https://github.com/ptq124/MovCard/issues/7) 
 ### 시연
 <img src="https://github.com/ptq124/MovCard/assets/64758823/662fe611-a0a1-4047-b7ef-861a1902af96" width="30%" height="30%">
 
