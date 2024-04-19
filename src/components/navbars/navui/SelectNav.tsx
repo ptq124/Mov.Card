@@ -1,20 +1,24 @@
 import styled from 'styled-components'
-import { SelectCardContext } from '../../../context/SelectCardContext'
 import MainLogo from '../../common/MainLogo'
 import BackSpace from './BackSpace'
 import { ReactComponent as BackSpaceIcon } from '../../../assets/icons/backspace.svg'
-import { useContext } from 'react'
+import { useDispatch } from 'react-redux'
+import { changeStage, popCard } from '../../../store/slices/cardSlice'
 
 export default function SelectNav() {
-  const { 뒤카드로변경 } = useContext(SelectCardContext)
+  const dispatch = useDispatch()
+
+  const handleClick = () => {
+    dispatch(changeStage('down'))
+    dispatch(popCard())
+  }
 
   return (
     <Nav>
-      <BackIcon onClick={() => 뒤카드로변경()}>
+      <BackIcon onClick={handleClick}>
         <BackSpaceIcon />
       </BackIcon>
-
-      <Back onClick={() => 뒤카드로변경()}>
+      <Back onClick={handleClick}>
         <BackSpace />
       </Back>
       <Logo>

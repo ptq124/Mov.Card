@@ -12,6 +12,9 @@ import 어둡 from '../assets/gif/어둡.gif'
 import 잔잔 from '../assets/gif/잔잔.gif'
 import 집단 from '../assets/gif/집단.gif'
 import 현대 from '../assets/gif/현대.gif'
+import { getSelectCard } from '../apis/selectcard'
+import { useDispatch } from 'react-redux'
+import { initData } from '../store/slices/cardSlice'
 
 export default function Select() {
   const [imgLoading, setImgLoading] = useState(true)
@@ -44,6 +47,14 @@ export default function Select() {
 
     return Promise.all(loadImg)
   }, [gif])
+
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    getSelectCard().then((data) => {
+      dispatch(initData(data))
+    })
+  }, [dispatch])
 
   useEffect(() => {
     const loadData = async () => {

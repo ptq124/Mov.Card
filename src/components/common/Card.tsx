@@ -1,7 +1,11 @@
 import styled from 'styled-components'
-import { SelectCardContext } from '../../context/SelectCardContext'
-import { useContext } from 'react'
+import { useState } from 'react'
 import { SelectType } from '../../shared/type'
+import { useDispatch, useSelector } from 'react-redux'
+import { changeStage, selectCard } from '../../store/slices/cardSlice'
+import { motion } from 'framer-motion'
+import { RootState } from '../../store'
+import { useNavigate } from 'react-router-dom'
 
 interface CardProps {
   gif: string
@@ -9,29 +13,53 @@ interface CardProps {
 }
 
 export default function Card({ info, gif }: CardProps) {
-  const { text, display, stage, id } = info
+  const dispatch = useDispatch()
 
-  const { 다음카드로변경 } = useContext(SelectCardContext)
+  const [isAnimating, setIsAnimating] = useState(false)
+  const cardVariants = {
+    initial: { y: 0 },
+    animate: { y: 600 },
+  }
+  const handleClick = (item) => {
+    setIsAnimating(true)
+    document.querySelectorAll('.card').forEach((card) => {
+      card.animate(cardVariants.animate, { duration: 1000, fill: 'forwards' })
+    })
+    setTimeout(() => {
+      dispatch(changeStage('up'))
+      dispatch(selectCard({ card: item }))
+      setIsAnimating(false)
+    }, 1500)
+  }
+  const navigate = useNavigate()
+  const result = useSelector((state: RootState) => state.card.selectData)
+  if (result.length === 4) {
+    const path = result.map((d) => d.card.id).join('')
+    navigate(`/result/${path}`)
+  }
 
   return (
-    <CardStyled
-      className='card'
-      display={display}
-      onClick={() => {
-        다음카드로변경(stage, id)
-      }}
-    >
-      <CardImg src={gif} />
-      <CardText>{text}</CardText>
-    </CardStyled>
+    <>
+      {info.map((item) => (
+        <CardStyled
+          className='card'
+          variants={cardVariants}
+          initial={isAnimating ? 'initial' : ''}
+          animate={isAnimating ? 'animate' : ''}
+          transition={{ duration: 0.5 }}
+          key={item.id}
+          display={item.display}
+          onClick={() => handleClick(item)}
+        >
+          <CardImg src={gif[item.id]} />
+          <CardText>{item.text}</CardText>
+        </CardStyled>
+      ))}
+    </>
   )
 }
 
-interface CardStyledProps {
-  display?: boolean
-}
-
-const CardStyled = styled.div<CardStyledProps>`
+const CardStyled = styled(motion.div)<{ display: boolean }>`
   border-image-source: linear-gradient(
     155.93deg,
     rgba(181, 94, 195, 0.96) 0.77%,

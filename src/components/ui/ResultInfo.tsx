@@ -1,12 +1,14 @@
 import styled from 'styled-components'
 import LiveTv from '../common/LiveTv'
-import Netflix from '../platform/Netflix'
-import Watcha from '../platform/Watcha'
-import Youtube from '../platform/Youtube'
-import Wavve from '../platform/Wavve'
-import Tving from '../platform/Tving'
-import Disneyplus from '../platform/Disneyplus'
 import { ResultType } from '../../pages/Result'
+import {
+  DisneyplusIcon,
+  NetflixIcon,
+  TvingIcon,
+  WatchIcon,
+  WavveIcon,
+  YoutubeIcon,
+} from '../../assets'
 
 interface ResultProps {
   data: ResultType
@@ -45,12 +47,12 @@ export default function ResultInfo({ data, index }: ResultProps) {
             <Plat>
               {platform.map((item, index) => (
                 <PlatForm key={index}>
-                  {item === '넷플릭스' && <Netflix />}
-                  {item === '왓챠' && <Watcha />}
-                  {item === '유튜브' && <Youtube />}
-                  {item === '웨이브' && <Wavve />}
-                  {item === '티빙' && <Tving />}
-                  {item === '디즈니플러스' && <Disneyplus />}
+                  {item === '넷플릭스' && <NetflixIcon />}
+                  {item === '왓챠' && <WatchIcon />}
+                  {item === '유튜브' && <YoutubeIcon />}
+                  {item === '웨이브' && <WavveIcon />}
+                  {item === '티빙' && <TvingIcon />}
+                  {item === '디즈니플러스' && <DisneyplusIcon />}
                 </PlatForm>
               ))}
             </Plat>
