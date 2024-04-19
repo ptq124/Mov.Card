@@ -1,0 +1,6 @@
+export { ReactComponent as DisneyplusIcon } from './icons/disneyplus.svg'
+export { ReactComponent as NetflixIcon } from './icons/netflix.svg'
+export { ReactComponent as TvingIcon } from './icons/tving.svg'
+export { ReactComponent as WatchIcon } from './icons/watcha.svg'
+export { ReactComponent as WavveIcon } from './icons/wavve.svg'
+export { ReactComponent as YoutubeIcon } from './icons/youtube.svg'
